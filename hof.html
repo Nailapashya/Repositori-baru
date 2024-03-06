@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Star Rating</title>
+    <link rel="stylesheet" href="CSS/hof.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+
+
+<body>
+
+    <nav>
+        <div>
+            <ul>
+                <img src="image/logo dw.png" alt="Logo DW">
+                <li class="active">
+                    <a href="task_1.html">Home</a>
+                </li>
+                <li class="active">
+                    <a href="myProject.html">My Project</a>
+                </li>
+                <li class="active">
+                    <a href="testimony.html">Testimonial</a>
+                </li>
+            </ul>
+        </div>
+
+        <div class="right">
+            <button class="btn">Contact Me</button>
+        </div>
+    </nav>
+
+    <div>
+        <h2>My Testimonials</h2>
+        <div class="rating-container">
+        <button class="rating" onclick="filterStar('all')">All</button>
+        <button class="rating" onclick="filterStar(1)">1 <i class="fa-solid fa-star"></i></button>
+        <button class="rating" onclick="filterStar(2)">2 <i class="fa-solid fa-star"></i></button>
+        <button class="rating" onclick="filterStar(3)">3 <i class="fa-solid fa-star"></i></button>
+        <button class="rating" onclick="filterStar(4)">4 <i class="fa-solid fa-star"></i></button>
+        <button class="rating" onclick="filterStar(5)">5 <i class="fa-solid fa-star"></i></button>
+    </div>
+    </div>
+
+    <div class="container-card" id="testimonials">
+        <div class="card">
+            <div class="image">
+                <img src="" alt="">
+                <p class="testimony"></p>
+                <div class="writer">
+                    <p></p>
+                </div>
+                <div class="rating-card">
+                    <i class="fa-solid fa-star"></i>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+
+    <script src="js/hof.js"></script>
+</body>
+
+</html>

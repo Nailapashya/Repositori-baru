@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Add My Project</title>
+  <link rel="stylesheet" href="CSS/myproject.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link rel="stylesheet" href="CSS/navbar.css">
+</head>
+
+
+<body>
+  <nav>
+    <div>
+        <ul>
+            <img src="image/logo dw.png" alt="Logo DW">
+            <li class="active">
+                <a href="task_1.html">Home</a>
+            </li>
+            <li class="active">
+                <a href="myProject.html">My Project</a>
+            </li>
+            <li class="active">
+                <a href="testimony.html ">Testimonial</a>
+            </li>
+        </ul>
+    </div>
+
+    <div class="right">
+        <button class="btn">Contact Me</button>
+    </div>
+
+    <div class="humberger">
+      <i id="humberger-btn" style="background-color: transparent; border: none;" class="fa-solid fa-bars" onclick="openHamburger()"></i>
+  </div>
+
+</nav>
+<div class="humberger-item hidden" id="humberger-item">
+    <a class="humberger-1" href="task_1.html">Home</a>
+    <a class="humberger-1" href="myProject.html">Add Project</a>
+    <a class="humberger-1" href="contact_me.html">Contact Me</a>
+</div>
+
+
+  <div class="container">
+    <form onsubmit="addBlog(event)">
+      <h2>ADD MY PROJECT</h2>
+      <label for="projectName">PROJECT NAME</label>
+      <input type="text" id="projectName">
+
+      <div class="date">
+        <div>
+          <label for="startDate">START DATE</label>
+          <input type="date" id="startDate" name="startDate">
+        </div>
+
+        <div>
+          <label for="endDate">END DATE</label>
+          <input type="date" id="endDate" name="endDate">
+        </div>
+      </div>
+
+      <label for="description">DESCRIPTION</label>
+      <textarea id="description"></textarea>
+
+      <label for="technologies">TECHNOLOGIES</label>
+      <div class="tech-container">
+        <div>
+          <label>
+            <input type="checkbox" name="technologies" value="NodeJs" id="nodeJs"> Node Js
+          </label>
+          <label>
+            <input type="checkbox" name="technologies" value="ReactJs" id="reactJs"> React Js
+          </label>
+        </div>
+
+        <div>
+          <label>
+            <input type="checkbox" name="technologies" value="apple" id="apple"> Apple
+          </label>
+          <label>
+            <input type="checkbox" name="technologies" value="android" id="android"> Android
+          </label>
+        </div>
+      </div>
+      <div>
+        <label for="image">UPLOAD IMAGE</label>
+        <input type="file" id="image">
+      </div>
+      <button type="submit">Submit</button>
+    </form>
+  </div>
+
+  <section id="contents" class="project">
+    <!--dynamic content would be here -->
+    <div class="judul">
+        <h1>MY PROJECT</h1>
+    </div>
+      <div id="card-content" class="card-container">
+        `<div class="card">
+          <img src="${dataBlogs[index].image}" class="image" alt="" /> 
+          <a href="blog-detail.html">${dataBlogs[index].title}</a>
+          <div class="duration">
+            <p>Durasi: ${getTime(dataBlogs[index])}</p>
+          </div>
+          <p class="text">${dataBlogs[index].description}</p>
+          <p class="icon">
+            ${dataBlogs[index].nodeJs ? '<i class="fab fa-node-js"></i>' : ''}
+            ${dataBlogs[index].reactJs ? '<i class="fab fa-react"></i>' : ''}
+            ${dataBlogs[index].apple ? '<i class="fab fa-apple"></i>' : ''}
+            ${dataBlogs[index].android ? '<i class="fab fa-android"></i>' : ''}
+          </p>
+          <div class="btn-card">
+            <button class="btn-edit">Edit</button>
+            <button class="btn-delete">Delete</button>
+          </div>
+        </div>`;
+        </div>     
+    </div> 
+</section>
+
+  <script src="js/navbar.js"></script>
+  <script src="js/myproject.js"></script>
+</body>
+</html>

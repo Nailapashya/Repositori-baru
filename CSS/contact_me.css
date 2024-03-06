@@ -1,0 +1,70 @@
+body {
+    margin: 0;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    background-color: #dbdbdb;
+    padding: 0 80px;
+    align-items: center;
+  }
+
+
+form {
+    width: 350px;
+    margin: 50px auto;
+}
+
+input, select, textarea {
+    width: 100px;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid black;
+    margin-top: 5px;
+}
+form label {
+    font-weight: bold;
+}
+
+form div {
+    margin-top: 10px;
+}
+
+form div button {
+    background-color: orangered;
+    padding: 8px ;
+}
+
+nav .right a {
+    text-decoration: none;
+    background-color: orangered;
+    padding: 8px 20px;
+    border-radius: 5px;
+    color: white;
+}
+nav. left ul {
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+nav. left ul img {
+    margin-right: 40px; 
+    height: 10px;
+}
+
+nav. left ul li a {
+    text-decoration: none;
+}
+
+nav. left ul .active a {
+    color:white;
+    padding: 8px;
+    border-radius: 5px;
+    background-color: orange;
+
+}
+
+
+

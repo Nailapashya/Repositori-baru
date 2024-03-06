@@ -1,0 +1,80 @@
+body {
+    background-color: gainsboro;
+}
+
+nav {
+    background-color: white;
+    display: flex;
+    padding: 16px;
+    justify-content: space-between;
+    color: black;
+}
+nav ul {
+    display: flex;
+    list-style: none;
+    align-items: center;
+    gap: 16px;
+    color: black;
+}
+nav ul li a {
+    text-decoration: none;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: 600;
+    color: black;
+}
+
+h2 {
+    text-align: center;
+}
+
+.class label-name {
+    font-weight: bold;
+    font-size: 20px;
+}
+.input-style {
+    padding: 5px;
+    background-color: white;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+
+.btn-submit {
+    padding: 10px;
+    background-color: black;
+    color: white;
+    width: 100px;
+    border-radius: 10px;
+    margin-top: 20px;
+    cursor: pointer;
+    float: right;
+    
+}
+.navbar {
+    background-color: aliceblue;
+    padding: 20px
+
+}
+.navbar-ul {
+    display: flex;
+    list-style: none;
+    justify-content: space-between;
+    
+}
+.number-left {
+    display: flex;
+    gap: 20px;
+    align-items: center
+}
+.btn {
+    padding: 5px;
+    background-color: black;
+    color: white;
+    width: 100px;
+    border-radius: 20px;
+    margin-top: 20px;
+}
+
+nav ul img {
+    width: 50px;
+}
